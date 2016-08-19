@@ -1,0 +1,15 @@
+server:
+  port: 8888
+
+eureka:
+  client:
+    registerWithEureka: false
+    fetchRegistry: true
+    serviceUrl:
+      defaultZone: http://localhost:1111/eureka/
+
+endpoints:
+  refresh:
+    enabled: true
+  restart:
+    enabled: true

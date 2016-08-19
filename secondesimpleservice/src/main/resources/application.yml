@@ -1,0 +1,38 @@
+#Service name
+server:
+  port: 2228
+
+spring:
+  application:
+   name: demoservice
+
+# Discovery Server Access
+
+eureka:
+  instance:
+    health-check-url: /health
+    status-page-url-path: /info
+    instance-enabled-onit: true
+    leaseRenewalIntervalInSeconds: 1
+    leaseExpirationDurationInSeconds: 3
+
+  client:
+   registerWithEureka: true
+   fetchRegistry: true
+   healthcheck:
+    enabled: true
+   serviceUrl:
+     defaultZone: http://localhost:1111/eureka/
+   dashboard:
+    enabled: false
+
+#  server:
+#   renewalPercentThreshold: 0.0
+#   enableSelfPreservation: false
+#   waitTimeInMsWhenSyncEmpty: 0
+
+#endpoints:
+#  refresh:
+#    enabled: true
+#  restart:
+#    enabled: true

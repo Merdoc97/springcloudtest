@@ -1,0 +1,26 @@
+eureka:
+ dashboard:
+    enabled: false
+ client:
+    register-with-eureka: false
+    fetch-registry: false
+    healthcheck:
+     enabled: true
+
+ instance:
+    hostname: localhost
+    lease-renewal-interval-in-seconds: 1
+    health-check-url: /health
+    status-page-url-path: /info
+ server:
+    wait-time-in-ms-when-sync-empty: 0
+    enableSelfPreservation: false
+
+server:
+  port: 1111
+
+endpoints:
+  refresh:
+    enabled: true
+  restart:
+    enabled: true

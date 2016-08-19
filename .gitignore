@@ -1,0 +1,9 @@
+/.mvn
+/.idea
+# Created by .ignore support plugin (hsz.mobi)
+/zuulproxy/target/
+/discovery/target/
+/springcloudconftest.iml
+
+springcloudconftest.iml
+
