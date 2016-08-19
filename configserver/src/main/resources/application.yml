@@ -7,4 +7,5 @@ spring:
    name: config-service
   cloud:
    config:
-      uri:
+      uri: https://github.com/Merdoc97/springcloudtest/tree/master/configserver/src/main/resources/configuration
+      fail-fast: true
