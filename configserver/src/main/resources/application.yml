@@ -1,5 +1,12 @@
-server:
-  port: 2228
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/Merdoc97/config-repo
+
+  application:
+    name: configserver
 
 eureka:
   instance:
@@ -10,11 +17,5 @@ eureka:
    serviceUrl:
      defaultZone: http://localhost:1111/eureka/
 
-spring:
-  cloud:
-    config:
-      server:
-        git:
-          uri: https://github.com/Merdoc97/config-repo
-  application:
-    name: configserver
+server:
+  port: 2228
