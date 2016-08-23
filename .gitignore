@@ -9,3 +9,6 @@ springcloudconftest.iml
 
 /secondesimpleservice/target/
 /simpleservice/target/
+/.idea/
+/configserver/demo.iml
+/configserver/target/

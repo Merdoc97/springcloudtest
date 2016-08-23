@@ -2,6 +2,7 @@
 /.mvn/
 /mvnw.cmd
 /mvnw
-/target/
+/target
+
 /dashboard.iml
 /configserver.iml
